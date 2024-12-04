@@ -1,0 +1,62 @@
+public class Main {
+    public static void main(String[] args) {
+
+    }
+}
+
+    class Animal {
+        private String name;
+        private int age;
+        private String species;
+        private Habitat habitat;
+
+        public Animal(String name, int age, String species, Habitat habitat) {
+            this.name = name;
+            this.age = age;
+            this.species = species;
+            this.habitat = habitat;
+        }
+    }
+
+    class Habitat {
+    private String type;
+    private int size;
+    private double temperature;
+    public Habitat(String type, int size, double temperature) {
+    this.type = type;
+    this.size = size;
+    this.temperature = temperature;
+
+    Habitat habitat1 = new Habitat("Savanna", 50, 37.5);
+    Habitat habitat2 = new Habitat("Tropical", 50, 32.6);
+    Habitat habitat3 = new Habitat("Rocky Mountain", 70, 25.7);
+
+    }
+    }
+    class Zoo {
+    Animal animal1;
+    Animal animal2;
+    Animal animal3;
+    Animal animal4;
+
+    public void addAnimal1(String name, int age, String species, Habitat habitat) {
+        animal1 = new Animal("Wild Hound", 4, "Mammal", habitat);
+        animal2 = new Animal("Elephant", 5, "Mammal", habitat);
+        animal3 = new Animal("Commode Dragon", 5, "Lizard", habitat);
+        animal4 = new Animal("Eagle", 3, "Bird", habitat);
+    }
+    }
+    class Staff{
+    private String name;
+    private String role;
+    private Habitat habitat;
+    Staff s1;
+    Staff s2;
+    Staff s3;
+    Staff s4;
+
+    void assignStaff(Habitat habitat){
+        s1= new Staff();
+
+    }
+    }
