@@ -1,7 +1,18 @@
 public class Main {
     public static void main(String[] args) {
+        Habitat habitat1 = new Habitat("Savanna", 50, 37.5);
+        Habitat habitat2 = new Habitat("Tropical", 50, 32.6);
+        Habitat habitat3 = new Habitat("Rocky Mountain", 70, 25.7);
 
-    }
+        Staff s1= new Staff("Eda", "Cleaner", habitat1);
+        Staff s2= new Staff("Dorian", "Cleaner", habitat2);
+        Staff s3= new Staff("Morgz", "Cleaner", habitat3);
+        Staff s4= new Staff("Gard", "Gardener", habitat3);
+        s1.assignStaff(habitat1);
+        s2.assignStaff(habitat2);
+        s3.assignStaff(habitat3);
+        s4.assignStaff(habitat3);
+   }
 }
 
     class Animal {
@@ -46,17 +57,20 @@ public class Main {
         animal4 = new Animal("Eagle", 3, "Bird", habitat);
     }
     }
-    class Staff{
+    class Staff
+    {
     private String name;
     private String role;
     private Habitat habitat;
-    Staff s1;
-    Staff s2;
-    Staff s3;
-    Staff s4;
+
+    public Staff(String name, String role, Habitat habitat) {
+        this.name = name;
+        this.role = role;
+        this.habitat = habitat;
+    }
 
     void assignStaff(Habitat habitat){
-        s1= new Staff();
+        this.habitat = habitat;
 
     }
     }
